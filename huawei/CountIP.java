@@ -48,7 +48,7 @@ import java.util.Scanner;
  * 复制
  * 1 0 1 0 0 2 1
  */
-public class HwCountIP {
+public class CountIP {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         int[] ans = new int[7];

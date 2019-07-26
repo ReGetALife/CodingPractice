@@ -60,7 +60,7 @@ import java.util.Scanner;
  * NG
  * OK
  */
-public class HwPasswordVerify {
+public class PasswordVerify {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

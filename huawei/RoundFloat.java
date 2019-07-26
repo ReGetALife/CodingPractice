@@ -23,7 +23,7 @@ import static java.lang.System.in;
  * 复制
  * 6
  */
-public class HwRoundFloat {
+public class RoundFloat {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(in));
         while (scanner.hasNext()) {

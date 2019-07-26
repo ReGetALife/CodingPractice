@@ -98,7 +98,7 @@ import java.util.Scanner;
  * 复制
  * 10,-10
  */
-public class HwMovePosition {
+public class MovePosition {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

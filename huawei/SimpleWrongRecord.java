@@ -40,7 +40,7 @@ import java.util.Scanner;
  * 复制
  * fpgadrive.c 1325 1
  */
-public class HwSimpleWrongRecord {
+public class SimpleWrongRecord {
     public static void main(String[] args) {
         List<String> position = new ArrayList<>();
         int[] count = new int[1000];

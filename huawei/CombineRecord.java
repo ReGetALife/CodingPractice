@@ -32,7 +32,7 @@ import static java.lang.System.in;
  * 1 2
  * 3 4
  */
-public class HwCombineRecord {
+public class CombineRecord {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(in));
         while (scanner.hasNext()) {

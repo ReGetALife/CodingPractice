@@ -21,7 +21,7 @@ import java.util.Scanner;
  * 复制
  * 2
  */
-public class HwCount1InBit {
+public class Count1InBit {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

@@ -59,7 +59,7 @@ import java.util.Scanner;
  * 300
  * 400
  */
-public class HwMingMingsRandomNum {
+public class MingMingsRandomNum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()){

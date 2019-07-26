@@ -19,7 +19,7 @@ import java.util.Scanner;
  * 输出
  * 1
  */
-public class HwWordNum {
+public class WordNum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String string = scanner.nextLine().toLowerCase();

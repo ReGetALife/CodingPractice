@@ -42,7 +42,7 @@ import static java.lang.System.in;
  * 复制
  * 2 2 3 3 5
  */
-public class HwPrimeFactor {
+public class PrimeFactor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(in));
         while (scanner.hasNext()) {

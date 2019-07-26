@@ -24,7 +24,7 @@ import java.util.Scanner;
  * 12345678
  * 90000000
  */
-public class HwSplitString {
+public class SplitString {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

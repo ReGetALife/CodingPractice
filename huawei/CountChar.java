@@ -21,7 +21,7 @@ import java.util.Scanner;
  * 复制
  * 3
  */
-public class HwCountChar {
+public class CountChar {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

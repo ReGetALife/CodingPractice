@@ -21,7 +21,7 @@ import java.util.Scanner;
  * 复制
  * 37689
  */
-public class HwGetUniqueNum {
+public class GetUniqueNum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

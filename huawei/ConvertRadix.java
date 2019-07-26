@@ -24,7 +24,7 @@ import static java.lang.System.in;
  * 复制
  * 10
  */
-public class HwConvertRadix {
+public class ConvertRadix {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(in));
         while (scanner.hasNext()) {

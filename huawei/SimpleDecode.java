@@ -34,7 +34,7 @@ import java.util.Scanner;
  * 复制
  * zvbo9441987
  */
-public class HwSimpleDecode {
+public class SimpleDecode {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

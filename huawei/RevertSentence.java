@@ -21,7 +21,7 @@ import java.util.Scanner;
  * 复制
  * boy a am I
  */
-public class HwRevertSentence {
+public class RevertSentence {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

@@ -18,7 +18,7 @@ import java.util.Scanner;
  * 输出
  * 5
  */
-public class HwLastWordLength {
+public class LastWordLength {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         String string = scanner.nextLine();

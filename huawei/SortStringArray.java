@@ -36,7 +36,7 @@ import java.util.Scanner;
  * two
  * up
  */
-public class HwSortStringArray {
+public class SortStringArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

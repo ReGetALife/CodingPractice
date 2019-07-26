@@ -47,7 +47,7 @@ import java.util.Scanner;
  * 复制
  * 2200
  */
-public class HwShoppingList {
+public class ShoppingList {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         while (scanner.hasNext()) {

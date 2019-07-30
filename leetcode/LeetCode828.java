@@ -12,7 +12,7 @@ public class LeetCode828 {
             ascii[i] = -1;
         }
         //字符最后出现位置的上一位置
-        int[] ascii2 = Arrays.copyOf(ascii,ascii.length);
+        int[] ascii2 = Arrays.copyOf(ascii, ascii.length);
         //以第i个字符为结尾的子串的独特字符数之和
         int[] uniq = new int[S.length()];
         uniq[0] = 1;
@@ -25,17 +25,17 @@ public class LeetCode828 {
                 uniq[i] = uniq[i - 1] + i + 1;
             } else {
                 //之前的序列中只有一个该字符
-                if(ascii2[c]==-1){
-                    uniq[i] = uniq[i - 1] + i + 1 - 2*(ascii[c] + 1);
-                    ascii2[c]=ascii[c];
-                    ascii[c]=i;
+                if (ascii2[c] == -1) {
+                    uniq[i] = uniq[i - 1] + i + 1 - 2 * (ascii[c] + 1);
+                    ascii2[c] = ascii[c];
+                    ascii[c] = i;
                 }
                 //之前的序列中已经出现过
                 else {
                     //先假设所有子串迭代后都因为新元素增加了1个特殊字符，然后其实有的是减少了1，有的不变
-                    uniq[i] = uniq[i - 1] + i + 1 - 2*(ascii[c] -ascii2[c]) - (ascii2[c]+1);
-                    ascii2[c]=ascii[c];
-                    ascii[c]=i;
+                    uniq[i] = uniq[i - 1] + i + 1 - 2 * (ascii[c] - ascii2[c]) - (ascii2[c] + 1);
+                    ascii2[c] = ascii[c];
+                    ascii[c] = i;
                 }
             }
         }

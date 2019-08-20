@@ -42,18 +42,18 @@ public class LeetCode236 {
         this.q = q;
         this.p = p;
         isRunning = true;
-        recurrence(root);
+        recursion(root);
         return ans;
     }
 
-    int recurrence(TreeNode root) {
+    int recursion(TreeNode root) {
         if (root == null || !isRunning)//如果已经找到答案则剪枝
             return 0;
         int temp = 0;
         if (root == p || root == q) {
             temp++;
         }
-        temp += recurrence(root.right) + recurrence(root.left);
+        temp += recursion(root.right) + recursion(root.left);
         if (temp == 2 && isRunning) {//避免重复更新答案
             ans = root;
             isRunning = false;

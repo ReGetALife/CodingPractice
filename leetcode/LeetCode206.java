@@ -21,11 +21,11 @@ public class LeetCode206 {
     private ListNode end;
 
     public ListNode reverseList(ListNode head) {
-        recurrence(head);
+        recursion(head);
         return start;
     }
 
-    private void recurrence(ListNode head) {
+    private void recursion(ListNode head) {
         if (head == null)
             start = null;
         else if (head.next == null) {
@@ -33,7 +33,7 @@ public class LeetCode206 {
             start = head;
             end.next = null;
         } else {
-            recurrence(head.next);
+            recursion(head.next);
             //把头节点加到尾部
             end.next = head;
             end = head;

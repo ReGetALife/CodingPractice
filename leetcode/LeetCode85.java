@@ -26,23 +26,29 @@ public class LeetCode85 {
         if (matrix.length == 0)
             return 0;
         int max = 0;
-        int[] dp = new int[matrix[0].length];
+        int m = matrix[0].length;
+        int[] dp = new int[m];
         Stack<Integer> stack = new Stack<>();
         stack.push(-1);
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                if (dp[j] == '1') dp[j] = 0;
+        for (char[] matrix1 : matrix) {
+            for (int j = 0; j < m; j++) {
+                if (matrix1[j] == '0') dp[j] = 0;
                 else dp[j]++;
             }
-            for (int j = 0; j <matrix[0].length ; j++) {
-                if(stack.size()<=1){
+            for (int j = 0; j < m; j++) {
+                if (stack.size() <= 1) {
                     stack.push(j);
-                }else if(dp[j]<dp[stack.peek()]){
-                    while (stack.size()>1&&dp[j]<dp[stack.peek()]){
+                } else if (dp[j] < dp[stack.peek()]) {
+                    while (stack.size() > 1 && dp[j] < dp[stack.peek()]) {
                         int t = stack.pop();
-
+                        max = Math.max(max, dp[t] * (j - stack.peek() - 1));
                     }
-                }
+                    stack.push(j);
+                } else stack.push(j);
+            }
+            while (stack.size() > 1) {
+                int t = stack.pop();
+                max = Math.max(max, dp[t] * (m - stack.peek() - 1));
             }
         }
         return max;

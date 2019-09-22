@@ -16,16 +16,15 @@ public class Sort {
     static void quickSort(int[] arr,int left,int right){
         if(left < right){
             //partition
-            int pivot = left;
-            int index = pivot + 1;
+            int index = left + 1;
             for(int i = index;i <= right;i++){
-                if(arr[i] < arr[pivot]){
+                if(arr[i] < arr[left]){
                     //swap
                     swap(arr,i,index);
                     index++;
                 }
             }
-            swap(arr,pivot,index - 1);
+            swap(arr, left,index - 1);
 
             quickSort(arr,left,index - 2);
             quickSort(arr,index,right);

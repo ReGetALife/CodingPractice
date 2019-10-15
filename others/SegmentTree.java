@@ -48,6 +48,7 @@ public class SegmentTree {
     }
 
     public void update(int index, int val) {
+        this.nums[index] = val;
         this.index = index;
         this.val = val;
         recursion2(0, nums.length - 1, 0);
